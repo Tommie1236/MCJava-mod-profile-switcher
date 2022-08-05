@@ -1,0 +1,1 @@
+# MCJava-mod-version-switcher
