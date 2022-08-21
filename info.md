@@ -1,6 +1,5 @@
 # INFO
 
-- [intor](#intro)
 - [config.ini](#configini)
 
 ---
