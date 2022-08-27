@@ -35,12 +35,14 @@
 (to save the version names) [see file](config.ini)
 ```ini
 [version names]
-profile_name = modloader mod_version
+"profile name" = modloader mod_version
 ```
 
 - profile_name = The name of the profile.
 - Modloader = The modloader for the mods in the profile (Either Forge or Fabric).
 - mod_version = The Minecraft version of the mods in the  profile.
+
+I know you shouldn't use stings in keys but it makes it easier to use in this specific case
 
 ## main.py
 [see file](main.py)  
