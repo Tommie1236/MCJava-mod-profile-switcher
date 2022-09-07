@@ -7,6 +7,7 @@
 
 ## to do
 
+- [ ] add the config.ini back in. (.gitignore wasnt leaving it alone)
 - [ ] implement version switching
 - [x] implement adding mods
 - [ ] ~implement removing mods (needs a gui window)
