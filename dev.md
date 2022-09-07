@@ -32,7 +32,7 @@
     - [ ] `remove`
 - [ ] add a function to launch the minecraft launcher
     - maybe add a option to choose your launcher (file?)
-- [ ] write docstrings
+- [ ] write docstrings 
 
 ## config.ini
 (to save the version names) [see file](config.ini)
