@@ -1,4 +1,4 @@
-# INFO
+# Dev
 
 - [to do](#to-do)
 - [config.ini](#configini)
@@ -10,30 +10,31 @@
 - [ ] add the config.ini back in. (.gitignore wasnt leaving it alone)
 - [ ] implement version switching
 - [x] implement adding mods
-- [ ] ~implement removing mods (needs a gui window)
+- [x] implement removing mods (needs a gui window)
 - [ ] make a gui
-    - [ ] choose a gui lib
-    - [ ] design a gui
+    - [x] choose a gui lib ([eel](https://github.com/ChrisKnott/Eel))
+    - [ ] design a gui (bgcolor: #0d1117)
     - [ ] make the gui interacive
-    - [ ] change the system error `print()` to a error promt
 - [x] move logic from `config.rm_version()` to `version.remove()`
-- [ ] rename version (as in what profile) to profile everywhere
+- [x] rename version (as in what profile) to profile everywhere
 - [ ] replace the `version, modloader` in the functions where they are the name of the profile folder with `profile_name`
     - config
     - [x] `get_profiles`
     - [x] `add_profile`
     - [x] `rm_profile`
-    - version
+    - profile
+    - [x] `get_current`
     - [ ] `switch_to`
-    - [ ] `add`
-    - [x] `remove`
+    - [x] `add` (gui)
+    - [x] `remove` (confirm promt when gui ready, the rest is finished)
     - mods
-    - [ ] `get_all`
-    - [ ] `add`
-    - [ ] `remove`
+    - [x] `get_all`
+    - [x] `add`
+    - [x] `remove` confim promt?
 - [ ] add a function to launch the minecraft launcher
     - maybe add a option to choose your launcher (file?)
 - [ ] write docstrings 
+- [ ] maybe combine `config.get_version` and `config.get_modloader` to a single function `config.get_info(profile_name: str, type: str)`
 
 ## config.ini
 (to save the version names) [see file](config.ini)
