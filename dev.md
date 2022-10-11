@@ -7,13 +7,24 @@
 
 ## to do
 
+- [ ] change the implementation of the profile info storage:? ↓
+```ini
+[selected]
+profile = fabric 1.19.2
+
+[fabric 1.19.2]
+version = 1.19.2
+modloader = fabric
+```
+
 - [ ] add the config.ini back in. (.gitignore wasnt leaving it alone)
 - [ ] implement version switching
 - [x] implement adding mods
 - [x] implement removing mods (needs a gui window)
 - [ ] make a gui
     - [x] choose a gui lib ([eel](https://github.com/ChrisKnott/Eel))
-    - [ ] design a gui (bgcolor: #0d1117)
+    - [x] design a gui (bgcolor: #0d1117)
+    - [ ] implement the gui design
     - [ ] make the gui interacive
 - [x] move logic from `config.rm_version()` to `version.remove()`
 - [x] rename version (as in what profile) to profile everywhere
@@ -35,6 +46,7 @@
     - maybe add a option to choose your launcher (file?)
 - [ ] write docstrings 
 - [ ] maybe combine `config.get_version` and `config.get_modloader` to a single function `config.get_info(profile_name: str, type: str)`
+- [ ] move the `config`, `profile`, `mods` classes to their own file (what to do with the single/double string functions?)
 
 ## config.ini
 (to save the version names) [see file](config.ini)
