@@ -1,3 +1,108 @@
 body {
 	background-color: #111b21;
+	margin: 0;
+	font-family: Arial;
+}
+p {
+	color: #ffffff;
+	font-size: 20px;
+	margin: 15px;
+}
+button {	/*default button*/
+	background-color: #202224;
+	border: 2px solid #D8D5D0;
+	color: #ffffff;
+	font-size: 20px;
+	width: 300px;
+	height: 30px;
+	margin: 5px 16.33px 5px 17px;
+	padding: 0;
+}
+.container {
+	display: grid;
+}
+.main-grid {
+	grid-template-areas:
+	/*332.656 332.656 332.656*/ 
+	"profiles mods new-profile"
+	"profiles mods info"
+	"profile-buts mod-buts launch";
+	grid-template-columns: 1fr 1fr 1fr;
+	min-height: 100%;
+}
+.dropdown { /* default dropdown*/
+	background-color: #202224;
+	border: 2px solid #D8D5D0;
+	color: #ffffff;
+	font-size: 20px;
+	width: 286px;
+	height: 26px;
+	margin: 5px 16.33px 5px 17px;
+	padding: 0;
+	display: block;
+	line-height: 0;
+}
+.selected {
+	width: 252px;
+	height: 26px;
+	border: none;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	text-align: center;
+}
+.ddimg {
+	width: 26px;
+	height: 26px;
+	border-left: 2px solid #D8D5D0;
+}
+.profiles {
+	grid-area: profiles;
+	height: 480px;
+}
+.profile-list, .mods-list {
+	background-color: #202224;
+	margin: 30px 16.33px 5px 17px;
+	border: 2px solid #D8D5D0;
+	height: 442px; /*maybe a little bigger gap => smaller int*/
+	width: 296px;
+	display: block;
+}
+.mods {
+	grid-area: mods;
+	height: 480px;
+	border-right: 2px solid #D8D5D0;
+}
+.new-profile {
+	grid-area: new-profile;
+	height: 215px;
+	padding: 25px 0 0 0;
+}
+.new-profile > button {
+	width: 290px;
+}/*
+.selected-v {
+	
+}*/
+.info {
+	grid-area: info;
+	height: 238px;
+	border-top: 2px solid #D8D5D0;
+}
+.profile-buts {
+	grid-area: profile-buts;
+	height: 170px;
+}
+.mod-buts {
+	grid-area: mod-buts;
+	height: 170px;
+	border-right: 2px solid #D8D5D0;
+}
+.launch {
+	grid-area: launch;
+	height: 168px;
+	border-top: 2px solid #D8D5D0;
+}
+.launch > button {
+	width: 280px;
 }
